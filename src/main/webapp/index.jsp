@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@page import="java.util.Calendar"%>
     
 <!DOCTYPE html>
 <html>
@@ -47,9 +48,27 @@
 }%> </h1>
 
 
-	                       
-                  
       
+      
+      <!-- SEGUNDA PARTE -->	            
+      
+  <%! Calendar dt = Calendar.getInstance();  %>        
+     
+  <%! Integer segundos() {
+  return dt.get(Calendar.SECOND); } %>       
+  
+    <h1>Os segundos é: <%= segundos() %></h1>
+    <h1><% if (segundos() %2 == 0){
+    	out.println("Os segundos é par"); 
+    	}else 
+    		out.println("Os segundos é impar"); %> </h1>  
+    		
+    		
+
+        
+   
+
+
 	                        
 </body>
 </html>
