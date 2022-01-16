@@ -31,5 +31,25 @@
 	                             out.println(new java.util.Date());
 	                        }%> </h1>
 	                        
+	                        
+	                        
+	                        
+      <!-- PRIMEIRA PARTE -->
+      
+<%! int valor = 3; %>
+
+<h1><%if(valor > 3){
+    out.println("Valor maior que 3");
+}else if (valor < 3) {
+	out.println("Valor menor que 3");
+}else {
+	out.println("Valor igual a 3");
+}%> </h1>
+
+
+	                       
+                  
+      
+	                        
 </body>
 </html>
